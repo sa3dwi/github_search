@@ -1,0 +1,225 @@
+*{
+    margin:0;
+    padding:0;
+    border:none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body, p{font-size: 14px;}
+h1,.h1{ font-size: 24px;}
+h2,.h2{ font-size: 22px;}
+h3,.h3{ font-size: 20px;}
+h4,.h4{ font-size: 18px;}
+h5,.h5{ font-size: 16px;}
+h6,.h6{ font-size: 14px;}
+
+small{ font-size: 12px;}
+strong, .strong{font-weight: 600}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  line-height: 1.7;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container{
+  width: 100%;
+  max-width: 1260px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+header .container{
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.MainLogo{
+    max-width: 320px;
+    display: block;
+    margin-bottom: 15px;
+}
+.MainLogo img{
+  vertical-align: middle;
+}
+.mainSearch .MainInput{
+    border: #D1D1D1 solid 1px;
+    box-shadow: none;
+    height: 50px;
+    background: #fff;
+    padding: 0 15px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    outline: none;
+}
+.mainSearch input.MainInput {
+    width:100%;
+    max-width: 360px;
+    margin-right: 10px;
+}
+.mainSearch .mainSelect{
+    position: relative;
+}
+.mainSearch .mainSelect select{
+    padding-right: 40px;
+}
+.mainSearch .mainSelect:after{
+    content: '';
+    position: absolute;
+    top: 22px;
+    right: 15px;
+    bottom: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #C4C4C4;
+    pointer-events: none;
+}
+
+
+img, svg {
+  vertical-align: middle;
+  max-width: 100%;
+  @include transition( all 0.3s ease-in-out);
+}
+
+/* list */
+.flex-list{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.flex-list>li{
+    -ms-flex: 1 0 100%;
+    flex: 1 0 100%;
+    max-width: 100%;
+    padding: 15px 0;
+}
+
+ul,li{
+  list-style: none;
+}
+.d-flex{
+    display: flex;
+}
+
+.flex-list>li:last-child{
+  padding: 0 !important;
+}
+.FlexList-full{
+  display: flex;
+}
+.FlexList-full>*{
+  -ms-flex: 1;
+  flex: 1;
+}
+.d-flex-sides{
+  width: 100%;
+}
+.d-flex-sides>*{
+  text-align: right;
+  margin-left: auto;
+}
+.d-flex-sides>*:first-child{
+  text-align: left;
+  margin-left: 0;
+}
+.d-flex-buttons>a{
+  padding: 15px;
+}
+.p-main{
+  padding: 15px;
+}
+article,aside,audio,canvas,command,datalist,details,embed,figcaption,figure,footer,header,hgroup,keygen,meter,nav,output,progress,section,source,video,main{
+    display:block
+}
+
+a, abbr, acronym, address, applet, article, aside, audio,b, blockquote, big, body,center, canvas, caption, cite, code, command,datalist, dd, del, details, dfn, dl, div, dt, em, embed,fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html,i, iframe, img, ins,kbd, keygen,label, legend, li, meter,nav,object, ol, output,p, pre, progress,q, s, samp, section, small, span, source, strike, strong, sub, sup,table, tbody, tfoot, thead, th, tr, tdvideo, tt,u, ul, var{
+    border: 0 none;
+    font-weight: inherit;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    vertical-align: top;
+}
+div{
+    display: block;
+}
+a{
+    text-decoration:none;
+    outline: none !important;
+    color:#333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @include transition( all .3s ease-in-out);
+    cursor: pointer;
+}
+.link{
+  color: #3073b1;
+  text-decoration: underline;
+}
+a:hover{
+  text-decoration: none;
+  color: #0089f3;
+}
+a:focus{
+  opacity: 0.9 !important;
+}
+.form-control:focus, .ui-spinner-input:focus{
+  box-shadow:none;
+  outline: none;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+  margin-bottom: 0.3rem;
+  font-weight: 400;
+}
+.strong5{
+  font-weight: 500;
+}
+.strong6{
+  font-weight: 600;
+}
+.strong7{
+  font-weight: 700;
+}
+p{
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+
+@media (min-width: 768px) {
+    .flex-list{
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .flex-list>li{
+        -ms-flex: 2 0 50%;
+        flex: 2 0 50%;
+        max-width: 50%;
+        padding: 15px;
+    }
+
+}
+@media (min-width: 992px) {
+    .flex-list{
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .flex-list>li{
+        -ms-flex: 4 0 25%;
+        flex: 4 0 25%;
+        max-width: 25%;
+        padding: 15px;
+    }
+
+}
